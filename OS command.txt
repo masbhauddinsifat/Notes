@@ -1,0 +1,13 @@
+## windows ##
+md
+dir
+cd
+pwd
+cls
+
+## linux ##
+mkdir
+ls
+cd
+pwd
+clear

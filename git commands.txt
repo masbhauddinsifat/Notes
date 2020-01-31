@@ -1,0 +1,15 @@
+git config --global user.name "John Doe"
+git config --global user.email johndoe@example.com
+ those two is first time only after install.
+
+git init
+
+
+git add README.md
+git add .
+
+git status
+
+git commit -m "you commit massage go here"
+git remote add origin githubRepLinkHere
+git push -u origin master

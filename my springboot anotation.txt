@@ -1,0 +1,57 @@
+class Base
+
+
+Service
+Component
+Controller
+RestController
+Primary
+
+
+Method base
+
+Autowired
+PathVariable
+RequestMapping						by defualt it is  get method
+GetMapping						alternative for requestMapping anotation
+RequestMapping(metthod = RequestMethod.POST)		for post method
+PostMapping						alternative for post method
+RequestMapping(metthod = RequestMethod.PUT)		for update/put method
+PutMapping						alternative for put/update method
+RequestMapping(metthod = RequestMethod.DELETE)		for delete method
+DeleteMapping						alternative for delete method
+RequestBody
+
+
+##hibernet anotation for spring boot##
+
+Entity
+Table(name="value")
+
+Id
+Column(name="value")
+GeneratedValue(strategy=GenerationType.Auto)
+
+@Column(unique = true) =========>  column should be unique
+@Transient  =========> to ignore a column save in db
+@Basic
+@Temporal(TemporalType.DATE) =========> for save date in db, also have TemporalType Time and TimeStamp
+@Lob =========>  i will use this when i need a very large text/varchar field more than 255 char example description field.
+
+@OneToOne
+@JoinTable(name="name")
+@JoinTable(name="name",joinColumns=@JoinColumn(name="name"), inverseJoinColumns=@JoinColumn(name="name"))
+@JoinColumn(name="columnName")
+@OneToMany
+@ManyToOne
+@ManyToMany
+
+@Embaddable
+@Embadded
+@ElementCollection
+
+
+
+
+helpful github link for spring boot project
+https://github.com/tanmoy069?tab=repositories
